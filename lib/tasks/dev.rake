@@ -5,8 +5,8 @@ namespace :dev do
       show_spinner("Apagando BD...") { %x(rails db:drop) }
       show_spinner("Criando BD...") { %x(rails db:create) }
       show_spinner("Migrando BD...") { %x(rails db:migrate) }
-      %x(rails dev:add_coins)
       %x(rails dev:add_mining_types)
+      %x(rails dev:add_coins)
     else
       puts "Você não está em ambiente de desenvolvimento"
     end
@@ -19,17 +19,20 @@ namespace :dev do
               { 
                 description: "Bitcoin",
                 acronym: "BTC",
-                url_image: "https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=022"
+                url_image: "https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=022",
+                mining_type: MiningType.find_by(acronym: "PoW")
               },
               { 
                 description: "Ethereum",
                 acronym: "ETH",
-                url_image: "https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022"
+                url_image: "https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022",
+                mining_type: MiningType.all.sample
               },
               { 
                 description: "Dash",
                 acronym: "DASH",
-                url_image: "https://cryptologos.cc/logos/dash-dash-logo.png?v=022"
+                url_image: "https://cryptologos.cc/logos/dash-dash-logo.png?v=022",
+                mining_type: MiningType.all.sample
               },
             ]
     coins.each do |coin|
