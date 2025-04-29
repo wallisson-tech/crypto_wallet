@@ -1,13 +1,13 @@
-'en:':
+'en':
   activerecord:
     models: 
       coin:
         one: Moeda
         other: Moedas
-      mining_type: Tipo de Mineração
+      mining_type:
         one: Tipo de Mineração
         other: Tipos de Mineração
-    atribbutes:
+    attributes:
       coin:
         id: Código
         description: Descrição
