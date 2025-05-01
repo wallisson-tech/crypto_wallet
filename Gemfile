@@ -45,11 +45,6 @@ gem "pry-rails"
 gem "tty-spinner"
 gem "rails-i18n"
 
-source "https://rubygems.org" do
-  gem "rails-assets-jquery"
-  gem 'rails-assets-notifyjs'
-end
-
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

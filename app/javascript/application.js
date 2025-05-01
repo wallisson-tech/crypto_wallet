@@ -2,4 +2,7 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 
+//= require jquery
+//= require notify-js-legacy/notify
+
 alert("Hello from application.js")

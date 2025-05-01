@@ -1,0 +1,12 @@
+{
+  "name": "crypto_wallet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wallisson-tech/crypto_wallet.git",
+  "author": "wallisson-tech <wallissonlopes.ti@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "notify-js-legacy": "^0.4.1"
+  }
+}
