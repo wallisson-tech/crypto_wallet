@@ -189,6 +189,8 @@ GEM
       activesupport (= 7.1.5.1)
       bundler (>= 1.15.0)
       railties (= 7.1.5.1)
+    rails-assets-jquery (3.7.1)
+    rails-assets-notifyjs (0.4.2)
     rails-dom-testing (2.2.0)
       activesupport (>= 5.0.0)
       minitest
@@ -274,6 +276,8 @@ DEPENDENCIES
   pry-rails
   puma (>= 5.0)
   rails (~> 7.1.5, >= 7.1.5.1)
+  rails-assets-jquery!
+  rails-assets-notifyjs!
   rails-i18n
   selenium-webdriver
   sprockets-rails
