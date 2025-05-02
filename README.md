@@ -22,5 +22,5 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* Instructor
-  @Jackson Pires
+## Instructor
+  - [Jackson Pires](https://github.com/jacksonpires): Curso Ruby on Rails 5(UDEMY).
