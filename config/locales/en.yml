@@ -32,9 +32,11 @@ en:
   welcome: "Welcome!"
   welcome_msg: "This is Crypto Wallet, an app for you to register and track your cryptocurrencies."
   menu_msg: "To get started, select one of the options below:"
+  confirm: "Are you sure?"
   hello: "Hello world"
 
   links:
     edit: "Edit"
     show: "Show"
     delete: "Delete"
+    new: "New"
