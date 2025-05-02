@@ -12,12 +12,20 @@
   </head>
 
   <body>
-    <h1>Cabeçalho - <%= params[:controller] %> </h1>
-    <%= yield %>
-    <footer>
-      <p>Rodapé</p>
-      <p>Desenvolvido por: <strong>Wltech</strong></p>
+    <div class="container-fluid">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <%= link_to 'Português', root_path(locale: 'pt-BR'), class: "nav-link"%>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'English', root_path(locale: 'en'), class: "nav-link"%>
+          </li>
+        </ul>
 
-      <script> $.notify("Funcionou!!", "sucess"); </script>
+      <%= yield %>
+      <footer>
+        <p>Desenvolvido por: <strong>Wltech</strong></p>
+      </footer>
+    </div>
   </body>
 </html>
