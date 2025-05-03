@@ -1,8 +1,18 @@
-<p style="color: green"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
-<%= render @mining_type %>
+<form>
 
-<%= link_to t("links.editing"), edit_mining_type_path(@mining_type), class: ('btn btn-primary') %> |
-<%= link_to t("links.back"), mining_types_path, class: ('btn btn-primary') %>
+  <div class="form-group">
+    <%= label_tag nil, @mining_type.class.human_attribute_name(:description) %>
+    <%= text_field_tag nil, @mining_type.description, class:"form-control", disabled: true %>
+  </div>
 
-<%= button_to "Destroy this mining type", @mining_type, method: :delete %>
+  <div class="form-group">
+    <%= label_tag nil, @mining_type.class.human_attribute_name(:acronym) %>
+    <%= text_field_tag nil, @mining_type.acronym, class:"form-control", disabled: true %>
+  </div>
+  
+</form>
+
+<%= link_to t('links.edit'), edit_mining_type_path(@mining_type), class:"btn btn-primary" %> |
+<%= link_to t('links.back'), mining_types_path, class:"btn btn-primary" %>
