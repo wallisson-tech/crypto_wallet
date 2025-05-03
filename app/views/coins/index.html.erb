@@ -18,13 +18,15 @@
         <td><%= coin.description %></td>
         <td><%= coin.acronym %></td>
         <td><%= image_tag coin.url_image, width: 50, heigth: 50 %></td>
-        <td><%= link_to 'Mostrar', coin %></td>
-        <td><%= link_to 'Editar', edit_coin_path(coin) %></td>
-        <td><%= link_to 'Apagar', coin, method: :delete, data: { confirm: t('msg.confirm') } %></td>
+        <td><%= link_to t('links.show'), coin %></td>
+        <td><%= link_to t('links.edit'), edit_coin_path(coin) %></td>
+        <td><%= link_to t('links.delete'), coin, method: :delete, data: { confirm: t('messages.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+
+<br>
 
 <%= link_to t("links.new"), new_coin_path, class: "btn btn-primary" %>
 <%= link_to t("links.back"), root_path, class: "btn btn-primary" %>
